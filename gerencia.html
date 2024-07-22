@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Eletiva Escolar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+
+    <script src="js/gerencia.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            tabelaeletiva();
+
+
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container text-uppercase bg-light">
+        <div class="container">
+            <div class="row d-flex justify-content-center m-4">
+                <img class="col-xs-4 col-md-2  "
+                    src="https://www.vilavelha.es.gov.br/img/logos/2023%20Logos%20PMVV%20%28curvas%29_horizontal.svg">
+                <img src="img/Escola.JPG" class="col-xs-3 col-md-1" alt="">
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center m-4">
+                <hr>
+                <blockquote class="blockquote">
+                    <p class="text-center h4">Eletivas Escolares 2º Semestre 2024 - GERAL</p>
+                </blockquote>
+            </div>
+
+        </div>
+        <br>
+        <form action="">
+            <div id="checkall">
+                <div class="container text-uppercase">
+                    <div class="d-flex justify-content-center">
+
+
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="1" onclick="verificar_elemento('1');">
+                            <label class="form-check-label" for="">SEMPRE QUIS SABER</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="2" onclick="verificar_elemento('2');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">QUEM NÃO CANTA, DANÇA!</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="3" onclick="verificar_elemento('3');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">TERRA-MAR (CULTURA
+                                AFRO-BRASILEIRA)</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="4" onclick="verificar_elemento('4');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">NEM TUDO SÃO FLORES, SÃO
+                                PETS</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="5" onclick="verificar_elemento('5');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">AEROMODELISMO</label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="container  text-uppercase">
+                    <div class="d-flex justify-content-center">
+
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="6" onclick="verificar_elemento('6');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">BRINCANDO E
+                                REUTILIZANDO</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="7" onclick="verificar_elemento('7');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">A MARÉ ESTÁ PARA PEIXE</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="8" onclick="verificar_elemento('8');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">ENTRE LINHAS</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="9" onclick="verificar_elemento('9');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">DE OLHO NO IFES</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="10" onclick="verificar_elemento('10');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">CARTAS NA MESA</label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="container text-uppercase">
+                    <div class="d-flex justify-content-center">
+
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="11" onclick="verificar_elemento('11');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">LEITURA PARA MENTES
+                                CURIOSAS</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="12" onclick="verificar_elemento('12');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">CINEMA EM AÇÃO</label>
+                        </div>
+                        <div class="form-check form-switch m-3">
+                            <input class="form-check-input" type="checkbox" id="13" onclick="verificar_elemento('13');">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">LABORATORIO</label>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center m-4">
+                    <hr>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center m-4">
+                <div class="d-flex justify-content-center">
+
+                    <button type="button" class="btn btn btn-outline-success btn-lg m-2" onclick="buscar_eletiva();"
+                        id="buscar">Pesquisar Eletivas
+                    </button>
+
+
+                </div>
+            </div>
+
+        </form>
+
+        <div class="container text-uppercase">
+            <div class="row d-flex justify-content-center m-4">
+                <div class="mb-3 text-center">
+                    <table class="table table-hover" id="tab_eletiva">
+                        <thead>
+                            <tr class="table-dark">
+                                <th>Matrícula</th>
+                                <th>Nome</th>
+                                <th>Turma</th>
+                                <th>Seguimento</th>
+                                <th>Eletiva Sorteada</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- -------------MODAL---------------------->
+    <div class="modal" id="meumodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="arialmsg" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title titulo"></h5>
+                    <button type="button" class="btn-close fechar" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="mensageria"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark fechar" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary confirmar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------FIM_MODAL-------------------->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src=" https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+    <!-- ------------------------SCRIPT EXPORTACAO------------------------------------------- -->
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <!-- ------------------------SCRIPT EXPORTACAO------------------------------------------- -->
+
+    <script src="js/gerencia.js"></script>
+
+    <script>
+        // -------------------RESETA A TABELA ELETIVAS---------------------------
+        $('#buscar').on('click', function () {
+            
+            tab_eletiva.clear();
+            
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checkedValues = [];
+            var checkbox1
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    checkbox1 = document.getElementById(checkbox.id)
+                    checkbox1.checked = false;
+                    
+                }            
+            });
+        });
+// ------------------------------------------------------------------------------------
+
+
+    </script>
+
+
+</body>
+
+</html>
